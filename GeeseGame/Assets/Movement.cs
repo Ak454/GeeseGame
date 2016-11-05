@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
+    public float time;
 	// Use this for initialization
 	void Start () {
 	
@@ -23,9 +24,9 @@ public class Movement : MonoBehaviour {
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) {
             Vector2 position = this.transform.position;
-            this.transform.position = position.y++;
+            position.y++;
             this.transform.position = position;
         }
 
