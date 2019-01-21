@@ -1,1 +1,3 @@
 # GeeseGame
+
+Hackathon game
